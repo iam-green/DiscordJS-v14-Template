@@ -6,6 +6,10 @@
   <a href="/docs/ko/README.md">한국어</a>
 </p>
 
+> [!NOTE]
+> Do you want a TypeScript version template?<br>
+> [Here](https://github.com/iam-green/DiscordTS-v14-Template) is a TypeScript version template!
+
 ## Table of Contents
 
 - [Installation](#installation)
