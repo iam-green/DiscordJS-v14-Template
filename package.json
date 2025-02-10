@@ -1,0 +1,40 @@
+{
+  "name": "discordjs-v14-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+    "scripts": {
+    "start": "node src/index.js",
+    "nodemon": "nodemon --watch \"src/**/*.ts\" -e js,jsx,ts,tsx,css,ejs,html,json ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "npm run fix:lint && npm run fix:format",
+    "fix:format": "npm run fix:prettier",
+    "fix:prettier": "prettier --write \"src/**/*.ts\"",
+    "fix:lint": "eslint \"src/**/*.ts\" --fix",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit push",
+    "studio": "drizzle-kit studio"
+  },
+  "author": "iam-green",
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "axios": "^1.7.9",
+    "chalk": "^4",
+    "discord-hybrid-sharding": "^2.2.4",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.2",
+    "glob": "^11.0.1",
+    "opusscript": "^0.1.1",
+    "pg": "^8.13.1",
+    "sodium-native": "^4.3.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.4",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.0"
+  }
+}
